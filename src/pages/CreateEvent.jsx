@@ -88,7 +88,7 @@ export default function CreateEvent() {
   async function loadAttendees(eventId) {
     setAttendeesLoading(true);
     try {
-      const res = await api.get(`/events/${eventId}/attendees`);
+      const res = await api.get(`/bookings/event/${eventId}/attendees`);
       setAttendees(res.data.attendees || []);
       setSelectedEvent(events.find(e => e._id === eventId));
       setShowAttendees(true);
