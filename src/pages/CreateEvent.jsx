@@ -286,7 +286,6 @@ export default function CreateEvent() {
                           >
                             <option value="Online">Online</option>
                             <option value="In-Person">In-Person</option>
-                            <option value="Hybrid">Hybrid</option>
                           </select>
                         </div>
                       </div>
